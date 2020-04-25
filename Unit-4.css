@@ -1,0 +1,57 @@
+body{
+	background-color: rgb(225, 227, 102);
+}
+h1{
+	font-family: "Raleway";
+	text-align: center;
+	text-decoration: underline;
+	color:rgba(121, 231, 237,0.9);
+
+}
+p{
+	font-family: 'Open Sans';
+	margin-left: 5%;
+
+}
+h4{margin-left: 2%;
+	font-family: "Roboto";
+}
+#ap .app{
+	font-family: "Open Sans";
+	margin-left: 6%;
+
+}
+img{
+	margin-left: 40%;
+}
+h2{
+	font-family: "Raleway";
+	margin-left:5%;
+
+}
+.amp{
+	font-family: "Open Sans";
+	margin-left: 6%;
+
+}
+.mba{
+	font-family: "Open Sans";
+	margin-left: 6%;
+}
+#jaag{
+	font-family: "Raleway";
+	margin-left:5%;
+}
+#last{
+	text-align: center;
+	font-family: "Roboto";
+}
+a:visited{
+	color:orange;
+}
+a:hover{
+	color:pink;
+}
+h1:hover{
+	color:pink;
+}

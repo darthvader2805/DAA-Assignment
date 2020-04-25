@@ -1,0 +1,39 @@
+body{
+	background-color:rgb(247, 214, 183);
+}
+h1{
+	font-family: "Raleway";
+	font-weight: 800;
+	border: 3px solid grey;
+	margin-left: 33.3%;
+	margin-right: 33.3%;	
+}
+p{
+	margin-left: 3%;
+	font-family:"Roboto";
+}
+table{
+	border:5px solid black;
+}
+th{
+	font-family: 'Open Sans', sans-serif;
+	border: 3px solid rgb(31, 102, 35);
+
+}
+td{
+	font-family: 'Open Sans', sans-serif;
+	border:2px solid rgb(101, 224, 214);
+}
+
+h1:hover{
+	color:blue;
+}
+ul li a:link{
+	color:blue;
+}
+ul li a:visited{
+	color:green;
+}
+ul li a:hover{
+	color:grey;
+}

@@ -1,0 +1,40 @@
+body{
+	background-color: #009955;
+}
+h1{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+text-decoration:underline;
+}
+h2{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;}
+p{
+	margin-left: 5%;
+	font-family: 'Open Sans', sans-serif;
+}
+h3{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+h4{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+
+}
+img{
+	border:6px solid grey;
+	padding:auto;
+	margin-left:33.3%;
+}
+.apple:hover{
+	color:#05f5a0;
+
+}
+.apple:visited{
+	color:grey;
+}

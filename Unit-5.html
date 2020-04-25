@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit-5</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Unit-5.css">
+</head>
+<body>
+	<h1>Unit-5</h1>
+	<h2>Randomization Algorithm(s):</h2>
+	<p>An algorithm that uses random numbers to decide what to do next anywhere in its logic is called Randomized Algorithm.. For example, in Randomized Quick Sort, we use random number to pick the next pivot (or we randomly shuffle the array). And in Karger’s algorithm, we randomly pick an edge.
+	</p>
+	<ul>
+		<li class="bantai">In addition to input,algorithm
+takes a source of random
+numbers and makes random
+choices during execution.</li><li class="bantai">Behavior can vary even on a fixed input</li>
+<li class="bantai">Design algorithm + analysis
+to show that this behavior is
+likely to be good, on every
+input.</li>
+<li class="bantai">The likelihood is over the
+random numbers only.</li>
+
+
+	</ul>
+	<h2>Approximation Algorithm(s):</h2>
+	<p>An approximation algorithm returns a solution to a combinatorial optimization problem that is provably close to optimal (as opposed to a heuristic that may or may not find a good solution). Approximation algorithms are typically used when finding an optimal solution is intractable, but can also be used in some situations where a near-optimal solution can be found quickly and an exact solution is not needed.</p>
+		<p>Many problems that are NP-hard are also non-approximable assuming P≠NP. There is an elaborate theory that analyzes hardness of approximation based on reductions from core non-approximable problems that is similar to the theory of NP-completeness based on reductions from NP-complete problems; we will not discuss this theory in class but a sketch of some of the main results can be found in (Vijay V. Vazirani, Approximation Algorithms, Springer, 2001), which is also a good general reference for approximation. Instead, we will concentrate on some simple examples of algorithms for which good approximations are known, to give a feel for what approximation algorithms look like.</p>
+		<h3>The Quality of an Approximation:</h3>
+		<p>In any combinatorial optimization problem, there is some objective function we are supposed to optimize. The approximation ratio (or approximation factor) of an algorithm is the ratio between the result obtained by the algorithm and the optimal cost or profit. Typically this ratio is taken in whichever direction makes it bigger than one; for example, an algorithm that solves for a cost of $2 an instance of a problem that has an optimal cost of $1 has approximation ratio 2; but an algorithm that sells 10 airplane tickets (a profit of 10) when the optimum is 20 also has approximation ratio 2.</p>
+		<p>An algorithm with approximation ratio k is called a k-approximation algorithm; both algorithms above would be called 2-approximation algorithms.</p>
+		<p>When the approximation ratio is close to 1, it is often more useful to look at the approximation error, which is defined as the approximation ratio minus 1. So an algorithm that always got within 1.01 of the optimal cost or profit would have a 1% approximation error.</p>
+		<p>A family of algorithms that can achieve any constant approximation error in polynomial time is called a polynomial-time approximation scheme or PTAS. A family of algorithms that can achieve any approximation error ε>0 in time polynomial in both 1/ε and n is called a fully polynomial time approximation scheme or FPTAS. Fully polynomial-time approximation schemes are the holy grail of approximation algorithms; they do not appear to exist for many problems, but when they are available, they are often almost as useful as an optimizing algorithm would be.</p>
+		<h3>Providing an Approximation Ratio:</h3>
+		<p>In general, proving that an algorithm gives a good approximation ratio is hard. It's not enough to prove that the algorithm's output is good (which we usually know how to do); you also have to show that the optimum is not much better. This takes us into the realm of proving lower bounds, which can be tricky when we can't figure out what the optimum should be. Most of the time a crude lower bound can be obtained from the structure of the problem (see the VERTEX COVER approximation below); occasionally the solution method also helps (for example, a fractional solution to a linear program gives a lower bound on the quality of the best integer solution).</p>
+		<h3>Vertex Cover:</h3>
+		<p>The minimum vertex cover problem on a graph asks for as small a set of vertices as possible that between them contain at least one endpoint of every edge in the graph. It is known that vertex cover is NP-hard, so we can't really hope to find a polynomial-time algorithm for solving the problem exactly. Instead, here is a simple 2-approximation algorithm:</p>
+		<img id="lo" src="VertexCover.jpg">
+		<p>To show that this gives a 2-approximation, consider the set E' of all edges the algorithm chooses. None of these edges share a vertex, so any vertex cover must include at least |E'| vertices. The algorithm marks 2|E'| vertices.</p>
+
+<h3>Hiring Problem:</h3>
+<img id="his" src="Hiring-0.jpg">
+<img id="diss" src="hiring-1.jpg">
+
+<ul>
+	<li class="bb"><a href="https://www.geeksforgeeks.org/quicksort-using-random-pivoting/">Randomized Quick Sort</a></li>
+	<li class="bb"><a href="https://www.hackerearth.com/practice/notes/exact-string-matching-algorithms/">String Matching Algorithm</a></li>
+	<li class="bb"><a href="https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/">Rabin Karp-String Matching</a></li>
+	<li class="bb"><a href="http://www.cs.yale.edu/homes/aspnes/pinewiki/ApproximationAlgorithms.html">Approximation Algorithm</a></li>
+	<li class="bb"><a href="https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/">Vertex Cover</a></li>
+<li class="bb"><a href="https://cse.buffalo.edu/~regan/papers/pdf/ALRch27.pdf">Complexity Classes</a></li>
+<li class="bb"><a href="https://mathworld.wolfram.com/P-Problem.html">P-Type Problem</a></li>
+<li class="bb"><a href="https://mathworld.wolfram.com/NP-Problem.html">NP-Type Problem</a></li>
+<li class="bb"><a href="https://www.tutorialspoint.com/Hamiltonian-Cycle">Hamiltonian Cycle</a></li>
+<li class="bb"><a href="https://www.geeksforgeeks.org/np-completeness-set-1/">NP-Complete Problems</a></li>
+<li class="bb"><a href="https://www.geeksforgeeks.org/2-satisfiability-2-sat-problem/">Satisfiability Problem</a></li>
+<li class="bb"><a href="https://mathworld.wolfram.com/NP-HardProblem.html">NP-Hard Problems</a></li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit-3</title>
+	<link rel="stylesheet" type="text/css" href="Unit-3.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Greedy & Dynamic Programming</h1>
+<p>A <a href="https://www.geeksforgeeks.org/greedy-algorithms/">Greedy Algorithm</a> is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. So the problems where choosing locally optimal also leads to a global solution are best fit for Greedy.</p>
+<p>For example, consider the Fractional Knapsack Problem. The local optimal strategy is to choose the item that has maximum value vs weight ratio. This strategy also leads to global optimal solution because we allowed taking fractions of an item.</p>
+<p><a href="https://www.geeksforgeeks.org/dynamic-programming/">Dynamic Programming</a> is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for the same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial. For example, if we write a simple recursive solution for Fibonacci Numbers, we get exponential time complexity and if we optimize it by storing solutions of subproblems, time complexity reduces to linear.</p>
+<table>
+	<thead>
+		<th>Feature</th>
+		<th>Greedy Method</th>
+		<th>Dynammic Programming</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Feasiblity</td>
+			<td>In a greedy Algorithm, we make whatever choice seems best at the moment in the hope that it will lead to global optimal solution</td>
+			<td>In Dynamic Programming we make decision at each step considering current problem and solution to previously solved sub problem to calculate optimal solution</td>
+		</tr>
+		<tr>
+			<td>Optimality</td>
+			<td>In Greedy Method, sometimes there is no such guarantee of getting Optimal Solution</td>
+			<td>It is guaranteed that Dynamic Programming will generate an optimal solution as it generally considers all possible cases and then choose the best</td>
+		</tr>
+		<tr><td>Recursion</td>
+			<td>A greedy method follows the problem solving heuristic of making the locally optimal choice at each stage</td>
+			<td>A Dynamic programming is an algorithmic technique which is usually based on a recurrent formula that uses some previously calculated states</td>
+		</tr>
+		<tr>
+			<td>Memorization</td>
+			<td>It is more efficient in terms of memory as it never look back or revise previous choices</td>
+			<td>It requires dp table for memorization and it increases it’s memory complexity</td>
+			</tr>
+			<tr>
+				<td>Time complexity</td>
+				<td>Greedy methods are generally faster. For example, Dijkstra’s shortest path algorithm takes O(ELogV + VLogV) time</td>
+				<td>Dynamic Programming is generally slower. For example, Bellman Ford algorithm takes O(VE) time</td>
+			</tr>
+			<tr>
+				<td>Example</td>
+				<td>Fractional knapsack</td>
+				<td>0/1 knapsack problem</td>
+			</tr>
+</tbody>
+</table>
+
+<ul>
+	<li><a href="https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/">Huffman Greedy</a></li>
+	<li><a href="https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_fractional_knapsack.htm">Fractional Knapsack Greedy</a></li>
+	<li><a href="https://www.cs.cornell.edu/courses/cs2110/2017fa/L20-GraphsIV/cs2110Graphs4.pdf">Tree Traversals</a></li>
+	<li><a href="https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/">Kruskal's Minimum Spanning Tree Algorithm</a></li>
+	<li><a href="https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/">Prim's Minimum Spanning Tree</a></li>
+	<li><a href="https://www.geeksforgeeks.org/dynamic-programming/">Dynammic Programming</a></li>
+	<li><a href="https://medium.com/@avik.das/dynamic-programming-deep-dive-chain-matrix-multiplication-a3b8e207b201">Matrix Chain Multiplication</a></li>
+	<li><a href="https://www.geeksforgeeks.org/optimal-binary-search-tree-dp-24/">Optimal Binary Search Tree</a></li>
+</ul>
+
+
+<a href="Unit-4.html"><h2>Go to Unit-4!</h2></a>
+
+
+
+
+
+
+
+
+</body>
+</html>

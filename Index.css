@@ -1,0 +1,80 @@
+body{
+	background:rgb(197, 232, 232);
+}
+h1{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	text-decoration:underline;
+
+}
+h2{
+	margin-left: 3%;
+	font-family:"Bangers";
+	text-decoration:underline;
+}
+.appl{
+	margin-left: 7%;
+	font-family: 'Roboto', sans-serif;
+
+}
+li{
+	margin-left: 6%;
+	font-family: 'Open Sans', sans-serif;
+
+
+}
+#plo{
+	border:5px solid rgb(133, 237, 150);
+	margin-left: 25%;
+	margin-right: 25%;
+}
+a:visited{
+color:grey;
+}
+h1:hover{
+	color:#00EA77;
+}
+a:hover{
+	color:#00EA77;
+}
+h2{
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+
+}
+h4{
+	margin-left: 2%;
+	font-family: 'Open Sans', sans-serif;
+
+}
+h2:hover{
+	color:#00EA77;
+}
+#lpo{
+	border:5px solid rgb(137, 87, 230);
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top:1%;
+
+}
+#x{
+	margin-left: 3%;
+	font-family:"Bangers";
+}
+.y{
+	margin-left: 6%;
+	font-family: 'Roboto', sans-serif;
+}
+#am{
+	margin-left: 45%;
+	font-family:"Bangers";
+}
+
+#alot{
+	border:5px solid rgb(184, 230, 135);
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top:1%;
+}
